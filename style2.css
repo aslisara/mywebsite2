@@ -25,19 +25,19 @@ nav{
   margin-top: 20px;
   margin-bottom: 20px;
   }
-nav u1 li{
+nav ul li{
   display:inline-block;
   list-style:none;
   margin :10px 20px;
 
 }
-nav u1 li a{
+nav ul li a{
   color:#fff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
 }
-nav u1 li a::after{
+nav ul li a::after{
 content: '';
 width:0;
 height: 3px;
@@ -47,7 +47,7 @@ left: 0;
 bottom: -6px;
 transition: 0.5s;
 }
-nav u1 li a:hover::after{
+nav ul li a:hover::after{
   width:100%;
 
 }
@@ -66,7 +66,7 @@ margin-top: 20px;
  }
  #about{
 padding: 100 px 0;
-color: darkblue;
+color: rgb(174, 174, 216);
 
  }
  .row{
@@ -90,12 +90,7 @@ color:#fff;
 
 
  }
- .sub-title1{
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color:#fff;
- }
+ 
  .tab-titles{
   display:flex;
   margin: 20px 0 40px;
@@ -121,3 +116,24 @@ transition: 0.5s;
 .tab-links.active-link::after{
   width: 50%;
 }
+.tab-contents ul li{
+  list-style: none;
+  margin:10px 0;
+}
+.tab-contents ul li span{
+color:#ff004f;
+font-size:15px;
+}
+.tab-contents{
+  display:none;
+   
+}
+.tab-contents.active-tab{
+  display:block;
+
+}
+
+
+
+
+

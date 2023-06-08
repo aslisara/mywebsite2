@@ -13,18 +13,18 @@
   <div class ="container">
     <nav>
       <img src="images/sara (2).png"class="logo">
-      <u1>
+      <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About </a></li>
     <li><a href="#">Cv</a></li>
     <li><a href="#"> News</a></li>
    <li><a href="#"> Contact</a></li>
-  </u1>
+  </ul>
 
        </nav>
        <div class="header-text">
         <p>Computer engineer</p>
-        <h1> Hi, I'm <span>Aslıcan</span><br> Sara from Türkiye</h1>
+        <h1> Hi, I'm <span>Aslican</span><br> Sara from Türkiye</h1>
       </div>
       <div id="About">
         <div class="container">
@@ -34,30 +34,47 @@
           <div class="About-col-2"></div>
           <h1 class= "sub-title">About Me</h1>
           
-        <p class="sub-title1"><span><br>03.10.2002 tarihinde İstanbul'da dünyaya geldim.<span>Lisede yazılıma ilgi duymaya başlamam dolayısıyla Bandırma OnYedi Eylül Üniversitesi'nde Bilgisayar Mühendisliği'ni kazandım.</span></p>
+        <p> 03.10.2002 tarihinde İstanbul'da dünyaya geldim.<span>Lisede yazılıma ilgi duymaya başlamam dolayısıyla Bandırma OnYedi Eylül Üniversitesi'nde Bilgisayar Mühendisliği'ni kazandım.</span></p>
        
   <div class="tab-titles">
-  <p class="tab-links active-link">Skills</p>
-  <p class="tab-links">Education</p>
+  <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+  <p class="tab-links" onclick="opentab('Education')">Education</p>
 </div>
-        <div class="tab-contents">  
-          <u1>
-            <li><span>Web Development</span></li>
-          </u1>
-          
-        </div>
+        <div class="tab-contents active-tab" id="Skills">  
+          <ul>
+            <li><span>Web Development</span><br></li>
+            <li><span> App Development</span><br></li>
+          </ul>
+           </div>
+           <div class="tab-contents" id="Education">
+       <ul>
+      <li><span>2021-Current</span><br>Computer engineering</span></li>
+     </ul>
+</div
 
-      
-      </div>
-
-
-        </div>
-      </div>
-
-
-   
+</div>
   </div>
-</div>
+      </div>
+     </div 
+  </div>
+   <script>
+  var tablinks=document.getElementsByClassName("tab-titles");
+   var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+  for(tablink of tablinks){
+tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+ tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+
+  }
+
+ </script>
+
+
 
 
    </head>
